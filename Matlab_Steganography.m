@@ -5,18 +5,18 @@
 %funcionando, ya que todos los cálculos con tamaños de la cabecera se 
 %han realizado usando estas variables)
 
-%1 bit tipo de datos (texto-imagen)
+%1 bit tipo de datos (1 bit= 2 opciones: texto-imagen)
 BitsTipoDatos = 1;
-%11 bits por altitud (máximo 2047)
+%11 bits por altitud (11 bits= altura máxima 2047)
 BitsAltitud = 11;
-%11 bits por longitud (máximo 2047)
+%11 bits por longitud (11 bits= longitud máxima 2047)
 BitsLongitud = 11;
-%1 bit por blanco y negro o rgb.
+%1 bit= 2 opciones: Grayscale o RGB
 BitsColor = 1;
-%21 bits por longitud de texto,
+%23 bits por longitud de texto,
 BitsStringLength = 23;
 
-%La tamaño máximo de la imagen contenida o del texto no podrá ser mayor 
+%El tamaño máximo de la imagen contenida o del texto no podrá ser mayor 
 %que estos valores, pero el tamaño máximo final se verá limitado por el
 %tamaño de la imagen contenedora (por cada byte se puede cifrar un bit,
 %por lo tanto se puede cifrar un archivo de tamaño 1/8)
